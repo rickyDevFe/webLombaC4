@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: var(--mainColor);
+}
+:root {
+    --mainColor: #001128;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+}
+.navigation a{
+    color: white;
+    margin-left: 30px;
+    font-weight: 800;
+    text-decoration: none;
+}
+/* Navbar */
+/* Hiro */
+.hiro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1), rgba(0,0,0,0)), url("../images/RPL1.jpeg");
+}
+
+.btn-started {
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: var(--mainColor);
+    animation: fadeUp 1.3s;
+    position: absolute;
+    bottom: 16em;
+}
+
+
+.hiro-title {
+    font-size: 4em;
+    color: white;
+    animation: fadeIn 3s;
+    font-weight: bold;
+}
+/* Hiro */
+/* Penjelasan */
+.penjelasan {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-color: var(--mainColor); */
+}
+.desc {
+    width: 700px;
+    bottom: 0;
+    position: absolute;
+}
+.penjelasan::before {
+    content: "";
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    filter: blur(100px);
+    opacity: 2;
+    top: -2em;
+    background-color: var(--white);
+}
+.subTitle {
+    font-size: 1.7em;
+    transition: .4s;
+}
+.title {
+    position: absolute;
+    top: 40%;
+    left: -20em;
+}
+ /* Penjelasan */
+/* Prospek */
+.prospek {
+    width: 100%;
+    height: 130vh;
+}
+
+.title-prospek {
+    font-size: 2em;
+    text-align: center;
+}
+.card-wrapper {
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-evenly;
+}
+
+.card-prospek {
+    color: black;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateX(0);
+    background-color: white;
+}
+.card-prospek .card-body {
+    padding: 1.5em;
+}
+.card-prospek img {
+    width: 100%;
+}
+.card-prospek:nth-child(2) {
+    transform: translateY(-20px);
+}
+
+ /* Prospek */
+/* PreClosing */
+.preClosing{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0)),
+        url("../images/RPL1.jpeg");
+}
+
+.teks {
+    width: 660px;
+    position: relative;
+}
+
+.teks-title {
+    font-size: 3em;
+    margin-left: 40px;
+    font-weight: 700;
+    padding-top: 4em;
+}
+.teks-desc {
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+ /* PreClosing */
+ /* Review */
+ .review {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    color: grey;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .card-review {
+    width: 700px;
+    padding: 4em;
+    background-color: rgba(255, 255, 255, 0.764);
+ }
+ .review-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--mainColor);
+ }
+ .card-content {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+ }
+ .card-content img {
+    width: 150px;
+ }
+ .writer {
+     position: absolute;
+    bottom: -30px;
+    font-weight: 800;
+    color: #3F76BF;
+    left: 10em;
+ }
+ .title-writer {
+    font-size: 1.2em;
+ }
+ .subTitle-writer {
+    font-size: 15px;
+ }
+ 
+ .pagination-next {
+    font-size: 2em;
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    cursor: pointer;
+ }
+  .pagination-previous {
+        font-size: 2em;
+        position: absolute;
+        bottom: 20%;
+        right: 32%;
+        cursor: pointer;
+ }
+ /* Review */
+ /* Footer */
+ footer {
+    width: 100%;
+    height: 100vh;
+}
+.footer-content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .footer-content h3 {
+    font-size: 5em;
+ }
+ #laptop {
+    position: absolute;
+    left: 0;
+ }
+.navigasi {
+    margin-left: 10em;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+ .navigasi a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 2em;
+    background-color: white;
+    transition: .2s;
+    padding: 1em;
+ }
+ .navigasi a:hover {
+    transform: rotate(2deg);
+ }
+ .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ /* Footer */
+
+
+
+
+
+ /* Animation */
+ @keyframes fadeUp {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    } 50% {
+        opacity: .5;
+    } 
+    100%  {
+        opacity: 1;
+        bottom: 16em;
+    }
+ }
+ @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ @keyframes fadeLeft {
+    0% {
+        left: -20em;
+    } 100% {
+        left: 38%;
+    }
+ }
+ @keyframes fadeRight {
+    0% {
+        bottom: 20px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 43%;
+        opacity: 1;
+    }
+ }
+ .fadeLeft {
+    animation: fadeLeft 2s forwards;
+ }
+ .fadeRight {
+    animation: fadeRight 2s forwards;
+ }
+ /* Animation */
+
+
+
+
+ @media screen and (max-width:667px) {
+    .prospek {
+        height: 200vh;
+    }
+    .preClosing {
+        display: flex;
+        flex-direction: column;
+    }
+    .teks-desc {
+        font-size: 13px;
+        margin-top: 4%;
+        width: 400px;
+    }
+    .navigasi  {
+        width: 90%;
+    }
+    .teks {
+        width: 100%;
+    }
+    .teks-title {
+        font-size: 18px;
+            width: 50%;
+        margin-top: 40%;
+    }
+        .btn-started {
+            bottom: 13em;
+        }
+        .footer {
+            height: 100vh;
+        }
+        .footer-content {
+            flex-direction: column;
+        }
+        .main-content {
+            flex-direction: column;
+            align-items: center;
+             justify-content: center;
+        }
+        .main-content img {
+            margin-top: 80px
+        }
+        .main-content .navigasi {
+            margin-left: 0;
+        }
+        .footer-title {
+            font-size: 18px;
+        }
+        .writer {
+            top: 210px;
+        }
+}
+
+@media screen and (min-width:647px) and (max-width:1080px) {
+    
+}
+
+@media screen and (min-width:1080px) {
+    
+}

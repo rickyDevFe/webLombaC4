@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&family=Nunito+Sans&family=Poppins&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>SMKN 7 Batam</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbar">
+      <nav>
+        <div class="brand" style="display: flex; align-items: center">
+          <a href="">
+            <img src="images/logo.png" alt="logo-smkn7batam" width="50px" />
+          </a>
+          <h4 class="brand-text" style="margin-left: 20px">
+            SMK Negeri 7 Batam
+          </h4>
+        </div>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+        <div class="navigasi">
+          <ul id="main-nav">
+            <li>
+              <a onclick="backToTop()" style="cursor: pointer">Home</a>
+            </li>
+            <li>
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="jurusan-nav">
+              <a href="jurusan.html">Jurusan</a>
+              <ul id="list-jurusan">
+                <li>
+                  <img src="images/RPL.png" alt="" width="40px" />
+                  <a href="pages/Rpl.html" style="margin-left: 10px"
+                    >Rekayasa Perangkat Lunak</a
+                  >
+                </li>
+                <li style="margin-top: 20px">
+                  <img src="images/MM.png" alt="" width="40px" />
+                  <a href="" style="margin-left: 10px">Multimedia</a>
+                </li>
+                <li style="margin-top: 20px">
+                  <img src="images/TKJ.jpg" alt="" width="40px" />
+                  <a href="" style="margin-left: 10px"
+                    >Teknik Komputer Jaringan</a
+                  >
+                </li>
+                <li style="margin-top: 20px">
+                  <img src="images/TITL.png" alt="" width="40px" />
+                  <a href="" style="margin-left: 10px"
+                    >Teknik Instalasi tenaga Listril</a
+                  >
+                </li>
+                <li style="margin-top: 20px">
+                  <img src="images/TJA.jpg" alt="" width="40px" />
+                  <a href="" style="margin-left: 10px"
+                    >Teknik Jaringan Akses Telekomunikasi</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#gallery">Gallery Skaju</a>
+            </li>
+            <li>
+              <a href="team/index.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div class="sidebar">
+      <div class="brand-sidebar">
+        <a href="">
+          <img src="images/logo.png" alt="logo-smkn7batam" width="50px" />
+        </a>
+        <h4 class="brand-text" style="margin-left: 20px">SMK Negeri 7 Batam</h4>
+      </div>
+      <i class="fa-brands fa-xing" id="close"></i>
+      <div class="navigation-sidebar">
+        <a onclick="backToTop()" style="cursor: pointer">Home</a>
+        <a href="#profile">Profil</a>
+        <a href="jurusan.html">Jurusan</a>
+        <a href="#gallery">Gallery</a>
+        <a href="team/index.html">Team</a>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <!-- MainHiro -->
+    <section id="main">
+      <div class="main">
+        <div class="text-utama">
+          <p class="title">
+            SMK Negeri 7 <br />
+            Batam
+          </p>
+          <p class="subTitle">Rekayasa Perangkat Lunak</p>
+        </div>
+        <div class="secondary-text">
+          <h2 class="userText">Hello There!</h2>
+          <input
+            type="text"
+            name="userViewer"
+            id="userViewer"
+            placeholder="Who Are you?"
+            onchange="changeUserText()"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- MainHiro -->
+    <!-- Salam -->
+    <section id="salam">
+      <div class="salam">
+        <div class="text-salam">
+          <h3 class="judul-salam">
+            Selamat datang di website SMK Negeri 7 Batam
+          </h3>
+          <p>
+            Selamat datang di Website SMK Negeri 7 Batam. Semoga Website ini
+            dapat meng-informasikan tentang SMK Negeri 7 Batam. Jika terdapat
+            kekurangan informasi pada website ini, Silahkan Kunjungi Portal lain
+            untuk informasi yang lebih jelas
+          </p>
+          <a href="" class="btn" id="btn-lanjut">Lanjut</a>
+        </div>
+      </div>
+    </section>
+    <!-- Salam -->
+    <!-- Kompetensi Keahlian -->
+    <section id="jurusan-logo">
+      <div class="jurusan">
+        <h3 class="jurusanTitle">Kompetensi Keahlian</h3>
+        <div class="jurusanWrapper">
+          <img src="images/MM.png" alt="" width="100px" />
+          <img src="images/TKJ.jpg" alt="" width="100px" />
+          <img src="images/RPL.png" alt="" width="100px" />
+          <img src="images/TJA.jpg" alt="" width="100px" />
+          <img src="images/TITL.png" alt="" width="100px" />
+        </div>
+      </div>
+    </section>
+    <section id="jurusan-explain">
+      <div class="jurusan-explain">
+        <h2 class="jurusan-explainTitle" style="text-align: center">
+          Tentang Jurusan
+        </h2>
+        <p class="subtitleJurusan" style="text-align: center">
+          Apa saja jurusan yang ada di smkn7 Batam
+        </p>
+
+        <div class="jurusanExplain-wrapper">
+          <div class="card-jurusan">
+            <div id="img-j">
+              <img src="images/RPL.png" alt="" width="30px" id="img-jurusan" />
+            </div>
+            <h3 class="explainTitle">Rekayasa Perangkat Lunak</h3>
+            <p style="font-size: 13px">
+              Rekayasa Perangkat Lunak atau RPL adalah Kompetensi keahlian yang
+              berfokus pada perangkat lunak yaitu Web Development, Web design,
+              Bahasa Pemograman, Algoritma dan sebagainya.
+            </p>
+            <a href="pages/Rpl.html" class="btn-jurusan">Detail</a>
+          </div>
+          <div class="card-jurusan">
+            <div id="img-j">
+              <img src="images/MM.png" alt="" width="30px" id="img-jurusan" />
+            </div>
+            <h3 class="explainTitle">Multimedia</h3>
+            <p style="font-size: 13px">
+              Multimedia adalah Kompetensi keahlian yang berfokus pada visual
+              editing dan juga berfokus pada pengambilan serta pengeditan video.
+            </p>
+            <a href="" class="btn-jurusan">Detail</a>
+          </div>
+          <div class="card-jurusan">
+            <div id="img-j">
+              <img src="images/TKJ.jpg" alt="" width="30px" id="img-jurusan" />
+            </div>
+            <h3 class="explainTitle">Teknik Komputer dan Jaringan</h3>
+            <p style="font-size: 13px">
+              Teknik Komputer dan Jaringan adalah Kompetensi keahlian yang
+              berfokus pada hardware sebuah komputer. Siswa di ajari jenis-jenis
+              komponen komputer dan cara menghubungkan ke Jaringan.
+            </p>
+            <a href="" class="btn-jurusan">Detail</a>
+          </div>
+          <div class="card-jurusan">
+            <div id="img-j">
+              <img src="images/TITL.png" alt="" width="30px" id="img-jurusan" />
+            </div>
+            <h3 class="explainTitle">Teknik Instalasi Tenaga Listrik</h3>
+            <p style="font-size: 13px">
+              Teknik Instalasi Tenaga Listrik adalah sebuat Kompetensi keahlian
+              yang befokus pada instalasi tenaga listrik.
+            </p>
+            <a href="" class="btn-jurusan">Detail</a>
+          </div>
+          <div class="card-jurusan">
+            <div id="img-j">
+              <img src="images/TITL.png" alt="" width="30px" id="img-jurusan" />
+            </div>
+            <h3 class="explainTitle">Teknik Jaringan akses T.</h3>
+            <p style="font-size: 13px">
+              Teknik Jaringan akses Telekomunikasi adalah Kompetensi keahlian
+              yang berfokus pada jaringan jaringan Telekomunikasi.
+            </p>
+            <a href="" class="btn-jurusan">Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kompetensi Keahlian -->
+    <!-- Kegiatan -->
+    <section id="organisasi">
+      <div class="organisasi">
+        <div class="text-organisasi">
+          <h3 class="judulKegiatan">
+            Organisasi-Organisasi Unggulan di SMKN7 Batam
+          </h3>
+          <div class="teks paskibra" data-org="Paskibra.jpeg">
+            <h3 class="title-organisasi">Paskibra SMKN 7</h3>
+            <p>
+              Paskibra SMK Negeri 7 Batam atau dikenal dengan nama Laskobar yang
+              merupakan singkatan dari Laskar Komando Barisan adalah sebuah
+              organisasi yang bertujuan untuk melatih pbb dan pengibaran bendera
+              Merah Putih.
+            </p>
+          </div>
+          <div class="teks osis" data-org="Kegiatan-ngoding.jpg">
+            <h3 class="title-organisasi">Osis SMKN 7</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              mollitia, aut nulla labore doloremque laboriosam ea? Aliquid
+              perspiciatis molestias aliquam, esse sunt explicabo possimus
+              corrupti cum consequuntur inventore vitae est.
+            </p>
+          </div>
+          <div class="teks pramuka" data-org="pramuka2.jpg">
+            <h3 class="title-organisasi">Pramuka SMKN 7</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+              mollitia, aut nulla labore doloremque laboriosam ea? Aliquid
+              perspiciatis molestias aliquam, esse sunt explicabo possimus
+              corrupti cum consequuntur inventore vitae est.
+            </p>
+          </div>
+        </div>
+        <img src="images/Paskibra.jpeg" alt="" id="img-kegiatan" width="40%" />
+      </div>
+    </section>
+    <!-- Kegiatan -->
+    <!-- Siswa -->
+    <section id="siswa">
+      <div class="siswa">
+        <h3 class="prestasiTitle">Prestasi Siswa-siswi SMK Negeri 7 Batam</h3>
+        <h5 class="prestasiSubtitle">
+          Prestasi-prestasi yang ditorehkan oleh siswa-siswi SMKN7Batam baik
+          individu maupun tim
+        </h5>
+
+        <div class="navigate">
+          <a href="" class="nav-one">Juara 1 English Speech</a>
+          <a href="" class="nav-two">Juara 1 Futsal</a>
+          <a href="" class="nav-three">Juara 3 Harapan LKBB Pramuka</a>
+          <div class="pagination"></div>
+        </div>
+
+        <div class="prestasi-content" id="english">
+          <div class="text-pres">
+            <h3 class="pres-title">
+              Juara 1 <br />
+              English Speech Competetion
+            </h3>
+            <p class="pres-desc">
+              Siswi SMKN 7 Batam berhasil menjadi juara 1 lomba pidato <br />
+              bahasa inggris yang di selengarakan oleh
+            </p>
+            <a href="" class="btn-selengkapnya">Selengkapnya</a>
+          </div>
+          <div class="images-pres">
+            <div class="img-pres">
+              <img src="images/english-com-square.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="prestasi-content" id="futsal">
+          <div class="text-pres">
+            <h3 class="pres-title">
+              Juara 1 <br />
+              Futsal Pelajar Piala Kepala Bp Batam
+            </h3>
+            <p class="pres-desc">
+              Siswi SMKN 7 Batam berhasil menjadi juara 1 lomba pidato <br />
+              bahasa inggris yang di selengarakan oleh
+            </p>
+            <a href="" class="btn-selengkapnya">Selengkapnya</a>
+          </div>
+          <div class="images-pres">
+            <div class="img-pres">
+              <img src="images/futsal-square.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="prestasi-content" id="pramuka-lkbb">
+          <div class="text-pres">
+            <h3 class="pres-title">
+              Juara 3 Harapan <br />
+              LKBB Pramuka SMK Negeri 7 Batam
+            </h3>
+            <p class="pres-desc">
+              Siswi SMKN 7 Batam berhasil menjadi juara 3 Harapan LKBB <br />
+              Pramuka SMKN 7 Batam yang di laksanakan di SMK Negeri 4 Batam
+            </p>
+            <a href="" class="btn-selengkapnya">Selengkapnya</a>
+          </div>
+          <div class="images-pres">
+            <div class="img-pres">
+              <img src="images/pramuka-square.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Siswa -->
+    <!-- Profile Sekolah -->
+    <section id="profile">
+      <div class="profile">
+        <div class="konten">
+          <h2 class="text-content">Profile SMK Negeri 7 Batam</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/sYFcrkOxFU8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            id="yt"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Profile Sekolah -->
+    <!-- Kepsek -->
+    <section id="kepsek">
+      <div class="kepsek">
+        <img src="images/kepsek.jpg" alt="" />
+        <div class="text-kepsek">
+          <div class="rounded"></div>
+          <p class="kata-kepsek">
+            SMK Negeri 7 Berbudaya dan inovatif menjadi moto utama dan visi kami
+            sebagai sekolah untuk mencetak anak-anak muda berkualitas tinggi
+            yang siap serta matang untuk masuk ke dunia industri.
+          </p>
+          <br /><br />
+          <p class="title-kepsek">Sisrayanti M.Pd</p>
+          <p class="">Kepala SMK Negeri 7 Batam</p>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#001128"
+          fill-opacity="1"
+          d="M0,64L80,74.7C160,85,320,107,480,117.3C640,128,800,128,960,138.7C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Kepsek -->
+    <!-- Kegiatan -->
+    <section id="kegiatan">
+      <div class="kegiatan-rutin">
+        <h3 id="kegiatanTitle">Kegiatan Rutin di SMK Negeri 7 Batam</h3>
+        <div class="kegiatanRutinWrapper">
+          <div class="card-kr">
+            <div class="text-kr">
+              <h3 class="upacara">Upacara</h3>
+              <p>
+                Upacara dilakukan rutin setiap senin dan ketika memperingati
+                hari-hari besar NKRI.
+              </p>
+            </div>
+          </div>
+          <div class="card-kr" id="literasi">
+            <div class="text-kr literasi">
+              <h3 class="upacara">Literasi</h3>
+              <p>
+                Literasi adalah kegiatan rutin yang dilaksanakan setiap hari
+                selasa di pagi hari, guna untuk meningkatkan minat baca serta
+                budaya siswa-siswi SMKN7Batam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kegiatan -->
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="gallery">
+        <h3 class="galleryTitle">Gallery SMKN 7 Batam</h3>
+        <h5 class="gallerySubTitle">
+          Foto-foto yang pasti menjadi kenangan semasa di SMKN7Batam
+        </h5>
+        <div class="galleryWrapper">
+          <div class="box"></div>
+          <!-- <div class="box dua"></div>
+          <div class="box empat"></div>
+          <div class="box lima"></div>
+          <div class="box enam"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <!-- joining -->
+    <section id="join">
+      <div class="join">
+        <h2 class="first">SMK Negeri 7 Batam</h2>
+        <h2 class="second">SMK Bisa-Hebat</h2>
+      </div>
+    </section>
+    <!-- joining -->
+    <!-- footer -->
+    <section id="footer">
+      <div class="footer">
+        <div class="left">
+          <img src="images/logo.png" alt="" width="100px" />
+          <h3 class="footerTitle">SMK Negeri 7 Batam</h3>
+          <p class="desc">
+            Perumahan Sekawan Pemko, Kelurahan Belian, Kecamatan Batam kota,
+            <br />
+            Kota Batam, Prov Kepulauan Riau Kode Pos:29463
+          </p>
+        </div>
+        <div class="mid">
+          <h1 style="margin-bottom: 1em">Nav</h1>
+          <a href="" id="btn-home">Kembali Ke atas</a>
+          <a href="jurusan.html">Kompetensi Keahlian</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div class="right">
+          <a
+            href="https://www.facebook.com/groups/smknegeri7batamkota/?mibextid=6NoCDW"
+            target="_blank"
+            id="facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://www.youtube.com/results?search_query=smkn+7+batam"
+            id="youtube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+            <span>Youtube</span>
+          </a>
+          <a
+            href="https://www.instagram.com/smkn7batam_official/"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="credit">
+        <p>
+          Website ini Di buat untuk keperluan lomba. Untuk informasi lebih
+          jelasnya silahkan kunjungin website resmi
+          <span>
+            <a
+              href="https://smknegeri7batam.sch.id/"
+              style="color: yellow; text-decoration: none"
+              target="_blank"
+              >SMK Negeri 7 Batam</a
+            ></span
+          >
+        </p>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
